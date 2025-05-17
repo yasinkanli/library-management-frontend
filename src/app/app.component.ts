@@ -1,12 +1,29 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { AuthorsComponent } from './authors/authors.component';
+import { BooksComponent } from './books/books.component';
+import { LoansComponent } from './loans/loans.component';
+import { MembersComponent } from './members/members.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    AuthorsComponent,
+    BooksComponent,
+    LoansComponent,
+    MembersComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+  activeSection: string = 'authors'; // default: yazarlar
+
+  setActive(section: string) {
+    this.activeSection = section;
+  }
 }

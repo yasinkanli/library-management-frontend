@@ -1,0 +1,50 @@
+<!-- Arama Kutusu -->
+<div class="search-bar">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="filterMembers()"
+    placeholder="Üye ara..."
+    class="form-control"
+  />
+</div>
+
+<!-- Üye Ekleme/Düzenleme Formu -->
+<div class="form-group">
+  <input
+    type="text"
+    [(ngModel)]="newMemberName"
+    placeholder="Üye adı"
+    class="form-control"
+  />
+
+  <input
+    type="text"
+    [(ngModel)]="newMemberCardNumber"
+    placeholder="Kart numarası"
+    class="form-control"
+  />
+
+  <button (click)="saveMember()">Kaydet</button>
+</div>
+
+<!-- Üye Tablosu -->
+<table>
+  <thead>
+    <tr>
+      <th>Adı</th>
+      <th>Kart Numarası</th>
+      <th>İşlemler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of filteredMembers">
+      <td>{{ member.name }}</td>
+      <td>{{ member.cardNumber }}</td>
+      <td>
+        <button (click)="editMember(member)">Düzenle</button>
+        <button (click)="deleteMember(member.id!)">Sil</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

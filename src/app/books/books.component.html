@@ -1,0 +1,52 @@
+<div class="search-bar">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="filterBooks()"
+    placeholder="Kitap ara..."
+    class="form-control"
+  />
+</div>
+
+<div class="form-group">
+  <input
+    type="text"
+    [(ngModel)]="newBookTitle"
+    placeholder="Yeni kitap başlığı"
+    class="form-control"
+  />
+
+  <select multiple [(ngModel)]="selectedAuthorIds" class="form-control">
+    <option *ngFor="let author of authorList" [value]="author.id">
+      {{ author.name }}
+    </option>
+  </select>
+
+  <button (click)="saveBook()">Kaydet</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Başlık</th>
+      <th>Yazarlar</th>
+      <th>İşlemler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of filteredBooks">
+      <td>{{ book.id }}</td>
+      <td>{{ book.title }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let author of book.authors">{{ author.name }}</li>
+        </ul>
+      </td>
+      <td>
+        <button (click)="editBook(book)">Düzenle</button>
+        <button (click)="deleteBook(book.id!)">Sil</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
