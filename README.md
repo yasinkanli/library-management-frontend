@@ -6,7 +6,6 @@ This is the **frontend application** of the Library Management System built with
 
 - ✅ Add, update, delete, and list **books** and **authors**  
 - ✅ Register library **members** with card numbers  
-- ✅ Create and manage **book loans** with due dates  
 - ✅ Dynamic dropdowns and real-time filtering  
 - ✅ Responsive UI with clean layout  
 - ✅ Built with Angular’s **standalone component architecture**  
