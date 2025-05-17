@@ -34,7 +34,8 @@ Manage authors and view their associated books.
 
 Create new books, assign multiple authors, and view the list.
 
-![image](https://github.com/user-attachments/assets/62652168-defd-4a22-97d5-b374238d68b3)
+![image](https://github.com/user-attachments/assets/d0e76036-b97b-4ea4-afc8-83b0c2512c62)
+
 
 
 ### 🔄 Loans View
