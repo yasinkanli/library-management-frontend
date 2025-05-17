@@ -27,25 +27,29 @@ This is the **frontend application** of the Library Management System built with
 
 Manage authors and view their associated books.
 
-![Authors](./ff5a06dc-37fb-4fee-9252-1268b4177f26.png)
+![image](https://github.com/user-attachments/assets/c5b5bca5-99ed-4604-9f70-98b931c2647f)
+
 
 ### 📚 Books View
 
 Create new books, assign multiple authors, and view the list.
 
-![Books](./afccbe76-e432-4cbd-94cf-e99391550599.png)
+![image](https://github.com/user-attachments/assets/62652168-defd-4a22-97d5-b374238d68b3)
+
 
 ### 🔄 Loans View
 
 Assign books to members, track loans, and manage due dates.
 
-![Loans](./8e92db79-2c57-4ddb-b75f-952b8554f99a.png)
+![image](https://github.com/user-attachments/assets/b9dc6aec-0ff4-43b4-ad38-19439f58690d)
+
 
 ### 👤 Members View
 
 Register new members and manage library users.
 
-![Members](./c5d40c6a-00f6-4548-9c2d-97fcc77cdec0.png)
+![image](https://github.com/user-attachments/assets/5f5e4ca5-c668-409b-ba1c-aaeaf4c2ddbd)
+
 
 ## 🔗 Backend Integration
 
