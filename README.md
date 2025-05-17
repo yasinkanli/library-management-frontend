@@ -1,59 +1,60 @@
-# Frontend
+# 📚 Library Management System – Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+This is the **frontend application** of the Library Management System built with **Angular Standalone Components**. It provides a user-friendly interface for managing books, authors, members, and loan transactions by interacting with the RESTful backend.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- ✅ Add, update, delete, and list **books** and **authors**  
+- ✅ Register library **members** with card numbers  
+- ✅ Create and manage **book loans** with due dates  
+- ✅ Dynamic dropdowns and real-time filtering  
+- ✅ Responsive UI with clean layout  
+- ✅ Built with Angular’s **standalone component architecture**  
+- ✅ Fully integrated with RESTful backend  
+
+## 🛠 Tech Stack
+
+- **Angular 17+**  
+- **TypeScript**  
+- **Bootstrap**  
+- **RxJS**  
+- **FormsModule & ngModel**  
+- **HTTPClientModule**  
+
+## 📸 Interface Overview
+
+### 📖 Authors View
+
+Manage authors and view their associated books.
+
+![Authors](./ff5a06dc-37fb-4fee-9252-1268b4177f26.png)
+
+### 📚 Books View
+
+Create new books, assign multiple authors, and view the list.
+
+![Books](./afccbe76-e432-4cbd-94cf-e99391550599.png)
+
+### 🔄 Loans View
+
+Assign books to members, track loans, and manage due dates.
+
+![Loans](./8e92db79-2c57-4ddb-b75f-952b8554f99a.png)
+
+### 👤 Members View
+
+Register new members and manage library users.
+
+![Members](./c5d40c6a-00f6-4548-9c2d-97fcc77cdec0.png)
+
+## 🔗 Backend Integration
+
+This frontend is fully connected to a Spring Boot backend:
+
+🔗 [Backend GitHub Repository](https://github.com/yasinkanli/library-management-backend)
+
+## 🧪 Run the Project
 
 ```bash
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
